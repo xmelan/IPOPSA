@@ -1,0 +1,180 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarColor01"
+      aria-controls="navbarColor01"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a
+            class="nav-link active navbar-brand"
+            [routerLink]="['/trailerlist']"
+            routerLinkActive="router-link-active"
+          >
+            <i class="material-icons">security</i> IPOPSA
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <ul class="navbar-nav ml-2">
+      <ng-container *ngIf="!authService.loggedIn(); else loggedIn">
+        <div class="container">
+          <div class="row">
+            <div class="col-9">
+              <img class="escudo"src="assets\mescudo.png">
+            </div>
+            </div>
+            <div class="row">
+            <div class="col-6">  <li class="nav-item">
+
+              <a
+                class="nav-link"
+                [routerLink]="['/signin']"
+                routerLinkActive="router-link-active"
+              >
+                Ingresar</a
+              >
+            </li></div>
+            <div class="col-6"><li class="nav-item">
+              <a
+                class="nav-link"
+                [routerLink]="['/signup']"
+                routerLinkActive="router-link-active"
+                >Crear cuenta</a
+              >
+            </li></div>
+
+          </div>
+
+        </div>
+        <!-- <li>  <img class="escudo"src="assets\mescudo.png"></li>
+        <li class="nav-item">
+
+          <a
+            class="nav-link"
+            [routerLink]="['/signin']"
+            routerLinkActive="router-link-active"
+          >
+            Ingresar</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/signup']"
+            routerLinkActive="router-link-active"
+            >Crear cuenta</a
+          >
+        </li> -->
+
+
+      </ng-container>
+      <ng-template #loggedIn>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/trailer']"
+            routerLinkActive="router-link-active"
+          >
+            Trailers</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href=""
+            class="nav-link"
+            style="cursor: pointer"
+            (click)="authService.logout()"
+          >
+            Cerrar Sesión</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link" style="cursor: pointer"></a>
+        </li>
+      </ng-template>
+    </ul>
+  </div>
+</nav>
+
+<div class="container p-5">
+  <router-outlet></router-outlet>
+</div>
+
+<footer class="bg-light text-center ">
+  <!-- Grid container -->
+  <div class="container p-4">
+
+
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <input type="email" id="form5Example2" class="form-control" />
+              <label class="form-label" for="form5Example2">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>Instituto Politecnico Parroquial Santa Ana</p>
+      <p>C. Barney N. Morgan 1, Santo Domingo 10403</p>
+      <p>(809) 684-4106</p> <p>ipopsa@gmail.com</p>
+    </section>
+    <!-- Section: Text -->
+
+
+
+
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2022 Copyright:
+    <a class="text-dark" href="https://mdbootstrap.com/">IPOPSA </a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
