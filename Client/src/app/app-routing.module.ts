@@ -7,6 +7,8 @@ import { SignupComponent } from './components/signup/signup.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { TrailerListComponent } from './components/trailer-list/trailer-list.component';
 import { TrailerPreviewComponent } from './components/trailer-preview/trailer-preview.component';
+import { StudentComponent } from './components/student/student.component';
+
 import { AuthGuard } from './auth.guard';
 const routes: Routes = [
   {
@@ -34,6 +36,10 @@ const routes: Routes = [
   {
     path: 'trailerlist/:id',
     component: TrailerPreviewComponent,
+  },
+  {
+    path: 'student',
+    component: StudentComponent,
   },
 ];
 

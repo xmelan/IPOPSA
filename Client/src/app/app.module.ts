@@ -20,6 +20,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { TrailerListComponent } from './components/trailer-list/trailer-list.component';
 import { TrailerPreviewComponent } from './components/trailer-preview/trailer-preview.component';
 import { SearchComponent } from './components/search/search.component';
+import { StudentComponent } from './components/student/student.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { SearchComponent } from './components/search/search.component';
     TrailerListComponent,
     TrailerPreviewComponent,
     SearchComponent,
+    StudentComponent,
   ],
   imports: [
     MatInputModule,

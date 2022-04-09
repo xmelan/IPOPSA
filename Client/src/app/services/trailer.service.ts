@@ -19,7 +19,7 @@ export class TrailerService {
   getTrailers(){
     return this.http.get<Trailer>(environment.ApiUrl + 'trailer');
   }
-  createTrailer(_trailer : any ){
+  createTrailer(_trailer : Trailer ){
     return this.http.post<Trailer>(environment.ApiUrl + 'trailer', _trailer);
   }
   putTrailer(trailer:Trailer){

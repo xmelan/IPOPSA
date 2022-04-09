@@ -60,7 +60,7 @@ exports.userSchema = new mongoose_1.Schema({
         required: true
     },
     role: {
-        type: String,
+        type: Number,
         required: true
     },
     code: {

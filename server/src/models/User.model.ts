@@ -5,7 +5,7 @@ export interface IUser extends Document{
     username : string;
     email : string;
     password : string;
-    role : string; // enum  
+    role : number; // enum  
     code : string;
     encryptPassword(password: string): Promise<string>;
     validatePassword(password: string): Promise<boolean>;
@@ -29,7 +29,7 @@ export const userSchema = new Schema({
         required:true
     },
     role:{
-        type:String,
+        type:Number,
         required:true
     },
     code:{

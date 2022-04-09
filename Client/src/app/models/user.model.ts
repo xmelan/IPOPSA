@@ -12,5 +12,5 @@ export class UserModel {
   rol: number = 1;
   email: string = '';
   password: string = '';
-
+  code: string = '';
 }

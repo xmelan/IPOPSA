@@ -2,8 +2,8 @@ import { Document, Schema, model} from "mongoose";
 import { userSchema} from './User.model';
 
  interface IAttendance extends Document {
-    studentCode: number;
-    teacherCode: number;
+    studentId: number;
+    teacherId: number;
     createdDate: Date;
     status : string;
     userId : number;

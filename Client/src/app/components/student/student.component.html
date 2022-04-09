@@ -1,0 +1,143 @@
+
+<div class="row">
+  <div class="col-md-4 mx-auto">
+    <div class="card border-primary mb-3">
+      <div class="card-header">
+        Agregar student
+      </div>
+      <div class="card-body">
+        <form #studentForm="ngForm" (submit)="createStudent(studentForm)"  action="/student/edit/{{student._id}}" method="POST">
+          <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="studentService.selectedStudent._id || student._id">
+            <div class="form-floating mb-3">
+            <input  id="floatingInput" type="text" [(ngModel)]="studentService.selectedStudent.name || student.name" name="name" #name="ngModel" class="form-control" placeholder="Titulo" required autofocus>
+            <label for="floatingInput">Nombre</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input  id="floatingInput" type="text" [(ngModel)]="studentService.selectedStudent.lastName || student.lastName" name="lastName" #name="ngModel" class="form-control" placeholder="Apellido"  required >
+            <label for="floatingInput">Apellido</label>
+          </div>
+          <div class="form-floating mb-3">
+            <select placeholder="Genero"id="student.gender" name="student.gender" [(ngModel)]="studentService.selectedStudent.gender || student.gender" class="form-select">
+              <option value="" disabled selected>Género</option>
+              <option value="Masculino" value="Masculino">Masculino</option>
+              <option value="Femenino" value="Femenino">Femenino</option>
+              </select>
+          </div>
+          <div class="form-floating mb-3">
+            <input  id="floatingInput" type="text" [(ngModel)]="studentService.selectedStudent.email || student.email" name="email" #name="ngModel" class="form-control" placeholder="Email"  required >
+            <label for="floatingInput">Email</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input  id="floatingInput" [(ngModel)]="studentService.selectedStudent.motherName || student.motherName" name="motherName"  #name="ngModel" class="form-control" placeholder="Madre" required >
+            <label for="floatingInput">Madre</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input  id="floatingInput" [(ngModel)]="studentService.selectedStudent.fatherName || student.fatherName" name="fatherName"  #name="ngModel" class="form-control" placeholder="Padre" required >
+            <label for="floatingInput">Padre</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input  id="floatingInput"  type="date" [(ngModel)]="studentService.selectedStudent.dob || student.dob" name="dob" #name="ngModel"class="form-control" placeholder="Año" required  min="1980" max="2023" step="1" value="1980"  >
+            <label for="floatingInput">Fecha Nacimiento</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input  id="floatingInput"  type="date" [(ngModel)]="studentService.selectedStudent.createdDate || student.createdDate" name="createdDate" #name="ngModel"class="form-control" placeholder="Año" required  min="1980" max="2023" step="1" value="1980"  >
+            <label for="floatingInput">Fecha Creacion</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input  id="floatingInput" type="text" [(ngModel)]="studentService.selectedStudent.phoneNumber || student.phoneNumber" name="phoneNumber" #name="ngModel"class="form-control" placeholder="Telefono" required >
+            <label for="floatingInput">Telefono</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input  id="floatingInput" type="text" [(ngModel)]="studentService.selectedStudent.address || student.address" name="address" #name="ngModel"class="form-control" placeholder="Direccion" required >
+            <label for="floatingInput">Direccion</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input  id="floatingInput" type="text" [(ngModel)]="studentService.selectedStudent.code || student.code" name="code" #name="ngModel"class="form-control" placeholder="code" required >
+            <label for="floatingInput">Codigo</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input  id="floatingInput" type="text" [(ngModel)]="studentService.selectedStudent.userId || student.userId" name="userId" #name="ngModel"class="form-control" placeholder="userId" required >
+            <label for="floatingInput">Link</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input id="floatingInput" type="text" [(ngModel)]="studentService.selectedStudent.image || student.image" name="image" #name="ngModel" class="form-control" placeholder="Imagen" required >
+            <label for="floatingInput">Imagen</label>
+          </div>
+
+          <div class="form-group mt-3">
+          <button type="submit" class="btn btn-primary mt-3 container "  routerLinkActive="router-link-active" >Guardar</button>
+
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class=" col-md-4 mx-auto">
+    <div class="card text-white bg-dark mb-3 border-light  card-body">
+      <img [src]="student.image == '' ? 'https://cdn.dribbble.com/users/1761902/screenshots/8527483/media/9e88b2c1b2f4404045326469fbcc5a8b.gif' : student.image" class="card-img-top">
+      <h3>{{student.name == '' ? '' : studentService.selectedStudent.name || student.name}}</h3>
+      <p>{{student.lastName == '' ? '' : studentService.selectedStudent.lastName || student.lastName}}</p>
+      <p>{{student.dob == '' ? '': studentService.selectedStudent.dob || student.dob}}</p>
+      <p>{{student.email == '' ? '': studentService.selectedStudent.email || student.email}}</p>
+      <p>{{student.motherName == '' ? '': studentService.selectedStudent.motherName || student.motherName}}</p>
+      <p>{{student.fatherName == '' ? '': studentService.selectedStudent.fatherName || student.fatherName}}</p>
+      <p>{{student.phoneNumber == '' ? '': studentService.selectedStudent.phoneNumber || student.phoneNumber}}</p>
+      <p>{{student.address == '' ? '': studentService.selectedStudent.address || student.address}}</p>
+      <p>{{student.code == '' ? '': studentService.selectedStudent.code || student.code}}</p>
+      <p>{{student.gender == '' ? '': studentService.selectedStudent.gender || student.gender}}</p>
+      <p>{{student.createdDate == '' ? '': studentService.selectedStudent.createdDate || student.createdDate}}</p>
+      <p>{{student.image == '' ? '': studentService.selectedStudent.image || student.image}}</p>
+      <p>{{student.userId == '' ? '': studentService.selectedStudent.userId || student.userId}}</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-12 container my-3">
+<table class="table table-striped table-primary ">
+  <thead >
+    <tr class="table-dark">
+    <th scope="col">Nombre</th>
+    <th scope="col">Apellido</th>
+    <th scope="col">Fecha Nacimiento</th>
+    <th scope="col">Email</th>
+    <th scope="col">Madre</th>
+    <th scope="col">Padre</th>
+    <th scope="col">Telefono</th>
+    <th scope="col">Direccion</th>
+    <th scope="col">Codigo</th>
+    <th scope="col">Genero</th>
+    <th scope="col">Fecha creacion</th>
+    <th scope="col">User ID</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students" >
+      <td>{{student.name}}</td>
+      <td>{{student.lastName}}</td>
+      <td>{{student.dob}}</td>
+      <td>{{student.email}</td>
+      <td>{{student.motherName}}</td>
+      <td>{{student.fatherName}</td>
+      <td>{{student.phoneNumber}}</td>
+      <td>{{student.address}}</td>
+      <td>{{student.code}}</td>
+      <td>{{student.gender}}</td>
+      <td>{{student.createdDate}}</td>
+      <td>{{student.userId}}</td>
+      <td>
+        <a class="btn btn-secondary btn-sm" (click)="editStudent(student)">
+          <i class="material-icons">edit</i>
+        </a>
+      </td>
+       <td>
+        <a class="btn btn-danger btn-sm" (click)="deleteStudent(student._id)" >
+          <i class="material-icons">delete</i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
