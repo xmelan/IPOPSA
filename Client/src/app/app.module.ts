@@ -21,6 +21,7 @@ import { TrailerListComponent } from './components/trailer-list/trailer-list.com
 import { TrailerPreviewComponent } from './components/trailer-preview/trailer-preview.component';
 import { SearchComponent } from './components/search/search.component';
 import { StudentComponent } from './components/student/student.component';
+import { AreaComponent } from './components/area/area.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +34,7 @@ import { StudentComponent } from './components/student/student.component';
     TrailerPreviewComponent,
     SearchComponent,
     StudentComponent,
+    AreaComponent,
   ],
   imports: [
     MatInputModule,

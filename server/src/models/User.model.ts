@@ -28,13 +28,11 @@ export const userSchema = new Schema({
         type:String,
         required:true
     },
-    role:{
+    rol:{
         type:Number,
-        required:true
     },
     code:{
         type:String,
-        required:true
     }
 });
 
