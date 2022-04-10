@@ -8,7 +8,7 @@ import { SigninComponent } from './components/signin/signin.component';
 import { TrailerListComponent } from './components/trailer-list/trailer-list.component';
 import { TrailerPreviewComponent } from './components/trailer-preview/trailer-preview.component';
 import { StudentComponent } from './components/student/student.component';
-
+import { AreaComponent } from './components/area/area.component';
 import { AuthGuard } from './auth.guard';
 const routes: Routes = [
   {
@@ -40,6 +40,10 @@ const routes: Routes = [
   {
     path: 'student',
     component: StudentComponent,
+  },
+  {
+    path: 'area',
+    component: AreaComponent,
   },
 ];
 

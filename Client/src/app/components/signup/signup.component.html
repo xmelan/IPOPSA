@@ -20,6 +20,14 @@
             <input type="password" [(ngModel)]="user.password" name="password" class="form-control" id="floatingPassword" placeholder="Contraseña" required>
             <label for="floatingPassword">Password</label>
           </div>
+          <div class="form-floating">
+            <input type="password" [(ngModel)]="user.rol" name="rol" class="form-control" id="floatingRol" placeholder="Rol" required>
+            <label for="floatingPassword">Rol</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" [(ngModel)]="user.code" name="code" class="form-control" id="floatingCode" placeholder="Codigo" required>
+            <label for="floatingPassword">Code</label>
+          </div>
           <div class="form-group mt-3">
           <button type="submit" class="btn btn-primary mt-3 container">Crear cuenta</button>
         </div>

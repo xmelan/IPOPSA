@@ -1,0 +1,7 @@
+.mx-auto{
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  background-color: transparent;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}

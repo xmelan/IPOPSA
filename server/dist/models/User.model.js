@@ -59,13 +59,11 @@ exports.userSchema = new mongoose_1.Schema({
         type: String,
         required: true
     },
-    role: {
+    rol: {
         type: Number,
-        required: true
     },
     code: {
         type: String,
-        required: true
     }
 });
 exports.userSchema.methods.encryptPassword = function (password) { return __awaiter(void 0, void 0, void 0, function () {
