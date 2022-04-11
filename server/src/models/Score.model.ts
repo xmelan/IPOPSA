@@ -3,11 +3,11 @@ import { Document, Schema, model} from "mongoose";
 import { userSchema} from './User.model';
 
  interface IScore extends Document {
-    subjectId: number;
+    subjectId: string;
     teacherId: string;
     score: number;
     createdDate : string;
-    userId: number;
+    userId: string;
 
 }
 export const scoreSchema = new Schema({

@@ -22,6 +22,11 @@ import { TrailerPreviewComponent } from './components/trailer-preview/trailer-pr
 import { SearchComponent } from './components/search/search.component';
 import { StudentComponent } from './components/student/student.component';
 import { AreaComponent } from './components/area/area.component';
+import { AttendanceComponent } from './components/attendance/attendance.component';
+import { GradeComponent } from './components/grade/grade.component';
+import { ScoreComponent } from './components/score/score.component';
+import { SubjectComponent } from './components/subject/subject.component';
+import { TeacherComponent } from './components/teacher/teacher.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +40,11 @@ import { AreaComponent } from './components/area/area.component';
     SearchComponent,
     StudentComponent,
     AreaComponent,
+    AttendanceComponent,
+    GradeComponent,
+    ScoreComponent,
+    SubjectComponent,
+    TeacherComponent,
   ],
   imports: [
     MatInputModule,
