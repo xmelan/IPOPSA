@@ -4,8 +4,8 @@ import { userSchema} from './User.model';
  interface ISubject extends Document {
     name: string;
     code : string;
-    areaId : number;
-    userId : number;
+    areaId : string;
+    userId : string;
 
 }
 export const subjectSchema = new Schema({
