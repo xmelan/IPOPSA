@@ -1,3 +1,4 @@
+<!-- JavaScript Bundle with Popper 
 <div class="row">
   <app-search (search)="handleSearch($event)"> </app-search>
 
@@ -25,6 +26,59 @@
         />
         <h4 class="text-info">Género: {{ trailer.category }}</h4>
         <span class="badge rounded-pill bg-primary">{{ trailer.year }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<div class="container col-xxl-8 px-4 py-5">
+  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="col-10 col-sm-8 col-lg-6">
+      <img src="assets/escudo.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="400" height="200" loading="lazy">
+    </div>
+    <div class="col-lg-6">
+      <h1 style="font-size: 40px;" class="display-5 fw-bold lh-1 mb-3 h1">Bienvenido al Campus Virtual</h1>
+      <p class="lead"></p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2"  [routerLink]="['/signin']"
+        routerLinkActive="router-link-active">Acceder</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row align-items-md-stretch">
+  <div class="col-md-6">
+    <div class="h-100 p-5 text-white bg-primary rounded-3">
+      <h2>inscripciones Disponibles</h2>
+      <p>inscripciones Disponibles para el proximo año escolar, llene el proceso de solicitud. </p>
+      <button class="btn btn-outline-light" type="button">ver inscripciones</button>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="h-100 p-5 text-white bg-primary rounded-3">
+      <h2>Talleres Disponibles</h2>
+      <p>Talleres Disponibles, llene el proceso de solicitud para poder inscripciones a los talleres. </p>
+      <button class="btn btn-outline-light" type="button">ver Talleres</button>
+    </div>
+  </div>
+</div>
+<div class=" px-4 py-5" id="featured-3">
+  <h2 class="pb-2 border-bottom">Redes Sociales</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col">
+      <div class="">
+        <i style="font-size: 60px; " class="fab fa-twitter text-primary"> </i>
+      </div>
+    </div>
+    <div class="feature col">
+      <div class="">
+        <i style="font-size: 60px; " class="fab fa-instagram coloicono"> </i>
+      </div>
+    </div>
+    <div class="feature col">
+      <div class="">
+        <i style="font-size: 60px; " class="fab fa-facebook text-primary"> </i>
       </div>
     </div>
   </div>

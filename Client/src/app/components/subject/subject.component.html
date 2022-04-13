@@ -1,5 +1,50 @@
+<!-- Button trigger modal -->
 
+
+<!-- Modal 
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agregar Asignatura</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form #teacherForm="ngForm" (submit)="createSubject(teacherForm)" action="/subject/edit/{{subject._id}}" method="POST">
+          <div class="row">
+           <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]="subjectService.selectedSubject._id || subject._id">
+           <div class="mb-3 col-sm-6" >
+           <label for="floatingInput">Nombre</label>
+           <input  id="floatingInput" type="text" [(ngModel)]="subjectService.selectedSubject.name || subject.name" name="name" #name="ngModel" class="form-control form-control-sm" placeholder="Nombre" required autofocus>
+         </div>
+         <div class="mb-3 col-sm-6">
+           <label for="floatingInput">Codigo</label>
+           <input  id="floatingInput" type="text" [(ngModel)]="subjectService.selectedSubject.code || subject.code" name="code" #name="ngModel" class="form-control form-control-sm" placeholder="Codigo"  required >
+         </div>
+          </div>
+          <div class="row">
+           <div class="mb-3 col-sm-4">
+             <label for="floatingInput">Area</label>
+             <input  id="floatingInput" type="text" [(ngModel)]="subjectService.selectedSubject.areaId || subject.areaId" name="areaId" #name="ngModel" class="form-control form-control-sm" placeholder="Area"  required >
+           </div>
+           <div class="mb-3 col-sm-4">
+             <label for="floatingInput">Usuario</label>
+             <input  id="floatingInput" type="text" [(ngModel)]="subjectService.selectedSubject.userId || subject.userId" name="userId" #name="ngModel" class="form-control form-control-sm" placeholder="Usuario" required >
+           </div>
+         </div>
+           
+         </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary"routerLinkActive="router-link-active">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+-->
 <div class="row">
+
   <div class="mx-auto">
     <div class="card border-light mb-3">
       <div class="card-header">
@@ -35,7 +80,7 @@
       </div>
     </div>
   </div>
-
+-->
 <div class="col-md-12 container my-3">
 <table class="table table-hover">
   <thead >
