@@ -25,8 +25,12 @@ import { AreaComponent } from './components/area/area.component';
 import { AttendanceComponent } from './components/attendance/attendance.component';
 import { GradeComponent } from './components/grade/grade.component';
 import { ScoreComponent } from './components/score/score.component';
+import { ScoreComponent2 } from './components/score-student/score.component';
+import { ScoreComponent3 } from './components/score-teacher/score.component';
 import { SubjectComponent } from './components/subject/subject.component';
 import { TeacherComponent } from './components/teacher/teacher.component';
+import { AttendanceComponent2 } from './components/attendance-teacher/attendance.component';
+import { AttendanceComponent3 } from './components/attendance-student/attendance.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +49,10 @@ import { TeacherComponent } from './components/teacher/teacher.component';
     ScoreComponent,
     SubjectComponent,
     TeacherComponent,
+    ScoreComponent2,
+    ScoreComponent3,
+    AttendanceComponent2,
+    AttendanceComponent3,
   ],
   imports: [
     MatInputModule,

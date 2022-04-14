@@ -47,9 +47,16 @@
                 <div class="mb-7 col-sm-12">
                   <input  id="floatingInput" type="text"  class="form-control form-control-sm" placeholder="buscar">
                 </div>
-                <i style="font-size: 30px;" class="fab fa-twitter text-primary"></i>
-                <i style="font-size: 30px;" class="fab fa-instagram coloicono"></i>
-                <i style="font-size: 30px;" class="fab fa-facebook text-primary"></i>
+                
+                <a style="position: absolute; right: 100px;" class="nav-link nav-icon search-bar-toggle " href="#">
+                  constactos
+                </a>
+                <div style="margin-left: 100px;">
+                  <i style="font-size: 30px; " class="fab fa-twitter text-primary"></i>
+                  <i style="font-size: 30px;" class="fab fa-instagram insta"></i>
+                  <i style="font-size: 30px;" class="fab fa-facebook text-primary"></i>
+                </div>
+                
               </div>
               </li></div><!-- Aquí puedes escribir tu comentario 
               <div class="col-6"><li class="nav-item">
@@ -123,7 +130,7 @@
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center" 
-      [routerLink]="['/trailerlist']"
+      [routerLink]="['/trailer']"
       routerLinkActive="router-link-active">
         <img src="assets/IPOPSA.png" alt="">
         
@@ -137,7 +144,7 @@
       <ul class="d-flex align-items-center">
         <li class="nav-item d-block d-lg-none">
           <a class="nav-link nav-icon search-bar-toggle " href="#">
-            <img src="assets/meescudo.png" alt="">
+            
             <i class="bi bi-search"></i>
           </a>
         </li>
@@ -158,71 +165,17 @@
   
             <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
               <i class="bi bi-bell"></i>
-              <span class="badge bg-primary badge-number">4</span>
+              <span class="badge bg-primary badge-number">0</span>
             </a><!-- End Notification Icon -->
     
             <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
               <li class="dropdown-header">
-                You have 4 new notifications
+                No tienes notificaciones
                 <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
               </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
+              
     
-              <li class="notification-item">
-                <i class="bi bi-exclamation-circle text-warning"></i>
-                <div>
-                  <h4>Lorem Ipsum</h4>
-                  <p>Quae dolorem earum veritatis oditseno</p>
-                  <p>30 min. ago</p>
-                </div>
-              </li>
-    
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-    
-              <li class="notification-item">
-                <i class="bi bi-x-circle text-danger"></i>
-                <div>
-                  <h4>Atque rerum nesciunt</h4>
-                  <p>Quae dolorem earum veritatis oditseno</p>
-                  <p>1 hr. ago</p>
-                </div>
-              </li>
-    
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-    
-              <li class="notification-item">
-                <i class="bi bi-check-circle text-success"></i>
-                <div>
-                  <h4>Sit rerum fuga</h4>
-                  <p>Quae dolorem earum veritatis oditseno</p>
-                  <p>2 hrs. ago</p>
-                </div>
-              </li>
-    
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-    
-              <li class="notification-item">
-                <i class="bi bi-info-circle text-primary"></i>
-                <div>
-                  <h4>Dicta reprehenderit</h4>
-                  <p>Quae dolorem earum veritatis oditseno</p>
-                  <p>4 hrs. ago</p>
-                </div>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li class="dropdown-footer">
-                <a href="#">Show all notifications</a>
-              </li>
+              
     
             </ul><!-- End Notification Dropdown Items -->
     
@@ -231,63 +184,16 @@
   
             <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
               <i class="bi bi-chat-left-text"></i>
-              <span class="badge bg-success badge-number">3</span>
+              <span class="badge bg-success badge-number">0</span>
             </a><!-- End Messages Icon -->
     
             <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages">
               <li class="dropdown-header">
-                You have 3 new messages
+                No tienes mensajes
                 <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
               </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
+              
     
-              <li class="message-item">
-                <a href="#">
-                  <img src="assets/img/messages-1.jpg" alt="" class="rounded-circle">
-                  <div>
-                    <h4>Maria Hudson</h4>
-                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                    <p>4 hrs. ago</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-    
-              <li class="message-item">
-                <a href="#">
-                  <img src="assets/img/messages-2.jpg" alt="" class="rounded-circle">
-                  <div>
-                    <h4>Anna Nelson</h4>
-                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                    <p>6 hrs. ago</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-    
-              <li class="message-item">
-                <a href="#">
-                  <img src="assets/img/messages-3.jpg" alt="" class="rounded-circle">
-                  <div>
-                    <h4>David Muldon</h4>
-                    <p>Velit asperiores et ducimus soluta repudiandae labore officia est ut...</p>
-                    <p>8 hrs. ago</p>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-    
-              <li class="dropdown-footer">
-                <a href="#">Show all messages</a>
-              </li>
     
             </ul><!-- End Messages Dropdown Items -->
     
@@ -298,7 +204,6 @@
               <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Profile" class="rounded-circle">
               <span class="d-none d-md-block dropdown-toggle ps-2">Melany Eusebio</span>
             </a><!-- End Profile Iamge Icon -->
-    
             <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
               <li class="dropdown-header">
                 <h6>Melany Eusebio</h6>
@@ -309,9 +214,9 @@
               </li>
     
               <li>
-                <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <a class="dropdown-item d-flex align-items-center" href="#">
                   <i class="bi bi-person"></i>
-                  <span>My Profile</span>
+                  <span>Perfil</span>
                 </a>
               </li>
               <li>
@@ -350,7 +255,8 @@
                 <hr>
                 <ul   style="width: 100%;" class="nav nav-pills flex-column mb-auto  ">
                   <li href="#" class="nav-item"> 
-                    <a  class="nav-link active " aria-current="page"> 
+                    <a  class="nav-link active " aria-current="page" [routerLink]="['/trailer']"
+                    routerLinkActive="router-link-active"> 
                       <i class="fa fa-home"></i>
                       <span class="ms-2">Inicio</span> 
                     </a> 
@@ -362,8 +268,10 @@
                     </a> 
                     <div class="collapse" id="orders-collapse">
                       <ul style="width: 220px;" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                          <li><a href="#" class="dropdown-item  text-dark">Calificaciones</a></li>
-                          <li><a href="#" class="dropdown-item  text-dark">Asistencia</a></li>
+                          <li><a href="#" class="dropdown-item  text-dark"aria-current="page"[routerLink]="['/score-student']"
+                            routerLinkActive="router-link-active" ><i class="fas fa-star"></i> Calificaciones</a></li>
+                          <li><a href="#" class="dropdown-item  text-dark"aria-current="page"[routerLink]="['/attendance-student']"
+                            routerLinkActive="router-link-active"><i class="fas fa-address-book"></i> Asistencia</a></li>
                       </ul>
                   </div>
                   </li>
@@ -377,49 +285,85 @@
   
                     <span style="font-size:25px;" class=" mantenimiwnto ">
                         <strong>
-                            Acciones
+                            Menu Maestro.
+                        </strong>
+                    </span>
+                  </a>
+                  <li href="#" class="nav-item"> 
+                    <a  class="nav-link text-dark" aria-current="page"[routerLink]="['/trailer']"
+                    routerLinkActive="router-link-active" > 
+                      <i class="fa fa-home"></i>
+                      <span class="ms-2">Inicio</span> 
+                    </a> 
+                  </li>
+                  <li> 
+                    <a  href="#" class="nav-link text-dark" data-bs-toggle="collapse" data-bs-target="#orders-collapse2" aria-expanded="false"> 
+                      <i class="fas fa-address-book"></i>
+                      <span class="ms-2">Registro</span> 
+                    </a> 
+                    <div class="collapse" id="orders-collapse2">
+                      <ul style="width: 220px;" class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                          <li><a href="#" class="dropdown-item  text-dark"aria-current="page"[routerLink]="['/score-teacher']"
+                            routerLinkActive="router-link-active" ><i class="fas fa-star"></i> Calificaciones</a></li>
+                          <li><a href="#" class="dropdown-item  text-dark" aria-current="page"[routerLink]="['/attendance-teacher']"
+                            routerLinkActive="router-link-active"><i class="fas fa-address-book"></i> Asistencia</a></li>
+                      </ul>
+                  </div>
+                  </li>
+                  <li> 
+                    <a  href="#" class="nav-link text-dark "> 
+                      <i class="fas fa-user"></i>
+                      <span class="ms-2">User</span> 
+                    </a> 
+                  </li>
+                  <a style="margin-top: 10px;"   class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none  ">
+  
+                    <span style="font-size:25px;" class=" mantenimiwnto ">
+                        <strong>
+                            Matenimiento
                         </strong>
                     </span>
                   </a>
                   <li style="margin-top:10px;" href="#" class="nav-item"> 
                     <a  class="nav-link text-dark " aria-current="page" [routerLink]="['/student']"
                     routerLinkActive="router-link-active"> 
-                      <i class="fas fa-sign-out-alt"></i>
+                    <i class="fas fa-graduation-cap"></i>
+                      
                       <span class="ms-2">Estudiante</span> 
                     </a> 
                   </li>
                   <li  href="#" class="nav-item"> 
                     <a  class="nav-link text-dark " aria-current="page"[routerLink]="['/teacher']"
                     routerLinkActive="router-link-active"> 
-                      <i class="fas fa-sign-out-alt"></i>
+                    <i class="fas fa-chalkboard-teacher"></i>
                       <span class="ms-2">Maestro</span> 
                     </a> 
                   </li>
                   <li  href="#" class="nav-item"> 
                     <a  class="nav-link text-dark " aria-current="page"[routerLink]="['/subject']"
                     routerLinkActive="router-link-active"> 
-                      <i class="fas fa-sign-out-alt"></i>
+                    <i class="fas fa-book-reader"></i>
                       <span class="ms-2">Asignatura</span> 
                     </a> 
                   </li>
                   <li  href="#" class="nav-item"> 
                     <a  class="nav-link text-dark " aria-current="page"[routerLink]="['/grade']"
                     routerLinkActive="router-link-active"> 
-                      <i class="fas fa-sign-out-alt"></i>
+                    <i class="fas fa-school"></i>
                       <span class="ms-2">Grado</span> 
                     </a> 
                   </li>
                   <li  href="#" class="nav-item"> 
                     <a  class="nav-link text-dark " aria-current="page"[routerLink]="['/score']"
                     routerLinkActive="router-link-active"> 
-                      <i class="fas fa-sign-out-alt"></i>
+                    <i class="fas fa-star"></i>
                       <span class="ms-2">Calificacion</span> 
                     </a> 
                   </li>
                   <li  href="#" class="nav-item"> 
                     <a  class="nav-link text-dark " aria-current="page"[routerLink]="['/attendance']"
                     routerLinkActive="router-link-active"> 
-                      <i class="fas fa-sign-out-alt"></i>
+                    <i class="fas fa-address-book"></i>
                       <span class="ms-2">Asistencia</span> 
                     </a> 
                   </li>
