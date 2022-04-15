@@ -23,11 +23,11 @@ import { AttendanceComponent3 } from './components/attendance-student/attendance
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/trailerlist',
+    redirectTo: '/ipopsa',
     pathMatch: 'full',
   },
   {
-    path: 'trailer',
+    path: 'ipopsa',
     component: TrailerAdminComponent,
     canActivate: [AuthGuard],
   },
@@ -40,7 +40,7 @@ const routes: Routes = [
     component: SigninComponent,
   },
   {
-    path: 'trailerlist',
+    path: 'ipopsa',
     component: TrailerListComponent,
   },
   {

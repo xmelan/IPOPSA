@@ -29,6 +29,6 @@ export class TrailerListComponent implements OnInit {
 
   selectedTrailer(id: string) {
     this.trailerService.getTrailer(id);
-    this.router.navigate(['trailerlist', id]);
+    this.router.navigate(['ipopsa', id]);
   }
 }

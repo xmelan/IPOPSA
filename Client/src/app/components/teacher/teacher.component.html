@@ -51,7 +51,7 @@
              <label for="floatingInput">Cedula</label>
              <input  id="floatingInput" [(ngModel)]="teacherService.selectedTeacher.cedula || teacher.cedula" name="motherName"  #name="ngModel" class="form-control form-control-sm" placeholder="Madre" required >
            </div>
- 
+
           </div>
          <div class="row">
            <div class="mb-3 col-sm-4">
@@ -81,7 +81,7 @@
              <input  id="floatingInput"  type="date" [(ngModel)]="teacherService.selectedTeacher.createdDate || teacher.createdDate" name="createdDate" #name="ngModel"class="form-control form-control-sm" placeholder="Año" required  min="1980" max="2023" step="1" value="1980"  >
            </div>
          </div>
-           
+
          <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">CSerrar</button>
           <button type="submit" class="btn btn-primary" routerLinkActive="router-link-active">Guardar</button>
@@ -92,7 +92,7 @@
   </div>
 </div>
 <div class="row">
-  <!-- Aquí puedes escribir tu comentario 
+  <!-- Aquí puedes escribir tu comentario
   <div class="mx-auto">
     <div class="card border-light mb-3">
       <div class="card-header">
@@ -178,26 +178,20 @@
     <tr >
     <th scope="col">Nombre</th>
     <th scope="col">Apellido</th>
-    <th scope="col">Fecha Nacimiento</th>
     <th scope="col">Email</th>
-    <th scope="col">Telefono</th>
     <th scope="col">Codigo</th>
     <th scope="col">Genero</th>
     <th scope="col">Fecha creacion</th>
-    <th scope="col">User ID</th>
   </tr>
   </thead>
   <tbody>
     <tr *ngFor="let teacher of teachers" >
       <td>{{teacher.name}}</td>
       <td>{{teacher.lastName}}</td>
-      <td>{{teacher.dob}}</td>
       <td>{{teacher.email}}</td>
-      <td>{{teacher.phoneNumber}}</td>
       <td>{{teacher.code}}</td>
       <td>{{teacher.gender}}</td>
       <td>{{teacher.createdDate}}</td>
-      <td>{{teacher.userId}}</td>
       <td>
         <a class="btn btn-secondary btn-sm" (click)="editTeacher(teacher)">
           <i class="material-icons">edit</i>

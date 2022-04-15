@@ -169,19 +169,19 @@
              <input  id="floatingInput"  type="date" [(ngModel)]="studentService.selectedStudent.createdDate || student.createdDate" name="createdDate" #name="ngModel"class="form-control form-control-sm" placeholder="Año" required  min="1980" max="2023" step="1" value="1980"  >
            </div>
          </div>
-           
+
          <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           <button type="submit" class="btn btn-primary" routerLinkActive="router-link-active">Agregar</button>
         </div>
          </form>
       </div>
-      
+
     </div>
   </div>
 </div>
 <div class="row">
-<!-- Aquí puedes escribir tu comentario 
+<!-- Aquí puedes escribir tu comentario
 <div class="row">
   <div class="mx-auto">
     <div class="card border-light mb-3">
@@ -260,7 +260,7 @@
           <div class="form-group col-auto">
           <button type="submit" class="btn btn-primary mt-3 col order-1 "  routerLinkActive="router-link-active" >Guardar</button>
         </div>
-        
+
         </form>
       </div>
     </div>
@@ -274,11 +274,7 @@
     <th scope="col">Apellido</th>
     <th scope="col">Fecha Nacimiento</th>
     <th scope="col">Email</th>
-    <th scope="col">Telefono</th>
     <th scope="col">Codigo</th>
-    <th scope="col">Genero</th>
-    <th scope="col">Fecha creacion</th>
-    <th scope="col">User ID</th>
   </tr>
   </thead>
   <tbody>
@@ -287,11 +283,7 @@
       <td>{{student.lastName}}</td>
       <td>{{student.dob}}</td>
       <td>{{student.email}}</td>
-      <td>{{student.phoneNumber}}</td>
       <td>{{student.code}}</td>
-      <td>{{student.gender}}</td>
-      <td>{{student.createdDate}}</td>
-      <td>{{student.userId}}</td>
       <td>
         <a class="btn btn-secondary btn-sm" (click)="editStudent(student)">
           <i class="material-icons">edit</i>
